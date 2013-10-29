@@ -84,8 +84,7 @@ USE="nls cjk unicode"
 PYTHON_TARGETS="python2_7 python3_2 python3_3"
 USE_PYTHON="3.2 2.7"
 
-# english only
-LINGUAS="en"
+LINGUAS="en ja"
 
 # for X support if needed
 INPUT_DEVICES="evdev"
