@@ -2,12 +2,10 @@
 
 cat <<DATAEOF > "/etc/profile.d/veewee.sh"
 # stage 3 filename and full url
-# retrieve from Gentoo current autobuild txt - these change regularlya
+# retrieve from Gentoo current autobuild txt - these change regularly
 
 # distfiles source
 distfiles_url=http://distfiles.gentoo.org
-#distfiles_url=http://gentoo.cites.uiuc.edu/pub/gentoo
-#distfiles_url=ftp://ftp.iij.ad.jp/pub/linux/gentoo
 
 build_arch="x86"
 build_proc="i686"

@@ -33,7 +33,7 @@ date -u > "$chroot/etc/vagrant_box_build_time"
 
 # retrieve and extract latest portage tarball
 chroot "$chroot" wget --tries=5 "${portageurl}"
-chroot "$chroot" tar -xvjpf portage-latest.tar.bz2 -C /usr
+chroot "$chroot" tar -xjpf portage-latest.tar.bz2 -C /usr
 chroot "$chroot" rm -rf portage-latest.tar.bz2
 chroot "$chroot" env-update
 
@@ -85,7 +85,7 @@ PYTHON_TARGETS="python2_7 python3_2 python3_3"
 USE_PYTHON="3.2 2.7"
 
 # english only
-LINGUAS="en ja"
+LINGUAS="en"
 
 # for X support if needed
 INPUT_DEVICES="evdev"
@@ -145,8 +145,6 @@ chroot "$chroot" /bin/bash <<DATAEOF
 echo LANG=\"$locale\" > /etc/env.d/02locale
 echo LANG_ALL=\"$locale\" >> /etc/env.d/02locale
 echo LANGUAGE=\"$locale\" >> /etc/env.d/02locale
-#echo LC_ALL=\"$locale\" >> /etc/env.d/02locale
-#echo LC_TYPE=\"$locale\" >> /etc/env.d/02locale
 env-update && source /etc/profile
 DATAEOF
 
