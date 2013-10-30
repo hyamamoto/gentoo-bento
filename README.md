@@ -1,15 +1,16 @@
-veewee-definitions
+Gentoo-Bento-Boxes
 ==================
 
-This is my incubation project for building Vagrant baseboxes.
+This is an incubation project for building Gentoo besed vagrant baseboxes.
 
 The primary goal here is to create disposable, clean, idempotent, and updatable
-Gentoo bento base boxes. Also these definition files are meant to build
-"Your Stage 4" of Gentoo Linux distro. By updating stage4 for your own system, 
-you eventually build your ideal environment and preserve it in a vagrant basebox.
+virtual boxes. These box will be "Your Stage 4" of Gentoo Linux distro. 
+By updating stage4 builder for your own system, you can have your ideal 
+environment and preserve it in a virtual image.
 
-Stable features in this project will be pushed to the veewee repository, and
-also the baseboxes encapsulated by these veewee definitions will be publicly available.
+Stable features in this project will be pushed to the veewee repository,
+and also the baseboxes encapsulated by these veewee definitions will be
+publicly available.
 
 
 Definitions
@@ -17,13 +18,13 @@ Definitions
 
 This repository includes veewee definitions below
 
-### Basic box with chef, puppet, git and vim
+### Plain Flavor: box with chef, puppet, git and vim
 
 * gentoo-latest-amd64
 * gentoo-latest-i686
 
 
-### Minimum box without gentoo-sources, doc, man nor info
+### Minimal Flavor: no gentoo-sources, no doc, no man, and no info
 
 * gentoo-latest-amd64-minimal
 * gentoo-latest-i686-minimal
@@ -54,7 +55,7 @@ Default is "en_US.UTF-8". Let's say your preferred language a French. Then do th
 ### Check USE flags
 
 USE flags have been customized for each basebox.
-Hit this command to see what you have in your box.
+Hit this command to see what you already have in your box.
 
 > cat /etc/portage/package.use/*
 
@@ -68,7 +69,7 @@ When your system is booted for the first time. Hit like
 to make sure the portage tree in your system is populated.
 
 
-### Add your custom ebuild to /usr/local/portage
+### Add your custom ebuilds in /usr/local/portage
 
 "/usr/local/portage" is located for your local portage by default.
 Put your customized ebuilds there and emerge.
@@ -77,12 +78,9 @@ Put your customized ebuilds there and emerge.
 Future plans
 ------------
 
-* Smaller box
+* Smaller box (squash it)
 * Minimal X setup
 * Fully configured but lightweight X setup
-* Mac OS X Maverick definitions
 * Convert these to Packer templates
 
 
---
-Hiroshi Yamamoto (higon@freepress.jp)

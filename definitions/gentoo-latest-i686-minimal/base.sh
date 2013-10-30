@@ -79,7 +79,7 @@ ACCEPT_KEYWORDS="$accept_keywords"
 MAKEOPTS="-j$((1 + $nr_cpus)) -l$nr_cpus.5"
 EMERGE_DEFAULT_OPTS="-j$nr_cpus --quiet-build=y"
 FEATURES="\${FEATURES} parallel-fetch nodoc noman noinfo"
-USE="nls cjk unicode"
+USE="nls cjk unicode -doc"
 
 PYTHON_TARGETS="python2_7 python3_2 python3_3"
 USE_PYTHON="3.2 2.7"
@@ -91,7 +91,7 @@ INPUT_DEVICES="evdev"
 VIDEO_CARDS="virtualbox"
 
 # Additional portage overlays (space char separated)
-PORTDIR_OVERLAY="/usr/local/portage"
+PORTDIR_OVERLAY="${PORTDIR_OVERLAY} /usr/local/portage"
 
 # Including /usr/local/portage overlay
 source "/usr/local/portage/make.conf"

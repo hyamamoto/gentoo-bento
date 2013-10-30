@@ -91,7 +91,7 @@ INPUT_DEVICES="evdev"
 VIDEO_CARDS="virtualbox"
 
 # Additional portage overlays (space char separated)
-PORTDIR_OVERLAY="/usr/local/portage"
+PORTDIR_OVERLAY="${PORTDIR_OVERLAY} /usr/local/portage"
 
 # Including /usr/local/portage overlay
 source "/usr/local/portage/make.conf"
