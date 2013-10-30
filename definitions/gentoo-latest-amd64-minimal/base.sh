@@ -72,13 +72,13 @@ DATAEOF
 cat <<DATAEOF > "$chroot/etc/portage/make.conf"
 CHOST="$chost"
 
-CFLAGS="-mtune=generic -O2 -pipe"
+CFLAGS="-mtune=generic -Os -pipe"
 CXXFLAGS="\${CFLAGS}"
 
 ACCEPT_KEYWORDS="$accept_keywords"
 MAKEOPTS="-j$((1 + $nr_cpus)) -l$nr_cpus.5"
 EMERGE_DEFAULT_OPTS="-j$nr_cpus --quiet-build=y"
-FEATURES="\${FEATURES} parallel-fetch"
+FEATURES="\${FEATURES} parallel-fetch nodoc noman noinfo"
 USE="nls cjk unicode"
 
 PYTHON_TARGETS="python2_7 python3_2 python3_3"

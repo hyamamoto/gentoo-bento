@@ -5,7 +5,7 @@ This is my incubation project for building Vagrant baseboxes.
 
 The primary goal here is to create disposable, clean, idempotent, and updatable
 Gentoo bento base boxes. Also these definition files are meant to build
-"Your Stage 4" of Gentoo Linux destro. By updating stage4 for your own system, 
+"Your Stage 4" of Gentoo Linux distro. By updating stage4 for your own system, 
 you eventually build your ideal environment and preserve it in a vagrant basebox.
 
 Stable features in this project will be pushed to the veewee repository, and
@@ -22,17 +22,17 @@ This repository includes veewee definitions below
 * gentoo-latest-amd64
 * gentoo-latest-i686
 
-<!---
 
 ### Minimum box without gentoo-sources, doc, man nor info
 
 * gentoo-latest-amd64-minimal
 * gentoo-latest-i686-minimal
 
+<!---
 
 kernel is based on gentoo-sources-3.10.7-r1  
 gentoo-xxx-amd64 definitions are tested against 20131024 snapshot.  
-gentoo-xxx-i686 definitions are tested against 20131022 snapshot.  
+gentoo-xxx-i686 definitions are tested against 20131029 snapshot.  
 
 -->
 
