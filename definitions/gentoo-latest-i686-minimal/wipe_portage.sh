@@ -81,7 +81,7 @@ cd /etc/portage
 echo "Cleaning main portage '/usr/portage' ..."
 emerge -q --sync
 emerge --metadata
-egencache --update --reop gentoo
+egencache --update --repo gentoo
 mv rsync_excludes rsync_excludes.all
 touch rsync_excludes
 echo "The main portage has been cleaned up. '/usr/portage' will be repopulated on next 'emerge --sync'."
