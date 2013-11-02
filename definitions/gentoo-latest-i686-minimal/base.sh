@@ -79,7 +79,7 @@ ACCEPT_KEYWORDS="$accept_keywords"
 MAKEOPTS="-j$((1 + $nr_cpus)) -l$nr_cpus.5"
 EMERGE_DEFAULT_OPTS="-j$nr_cpus --quiet-build=y"
 FEATURES="\${FEATURES} parallel-fetch nodoc noman noinfo"
-USE="nls cjk unicode -doc"
+USE="nls cjk unicode -doc -bluetooth"
 
 PYTHON_TARGETS="python2_7 python3_2 python3_3"
 USE_PYTHON="3.2 2.7"

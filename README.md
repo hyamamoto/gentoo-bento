@@ -7,7 +7,7 @@ A primary obejective of this project is to create disposable, clean, idempotent,
 By updating stage4 builder, you may end up building  your own ideal 
 environment and preserve it in a virtual image.
 
-Stable features from this project will be pushed to the [veewee](https://github.com/jedi4ever/veewee) repository, also the baseboxes encapsulated by these veewee definitions will be publicly available.
+Stable features from this project will be pushed to the [veewee](https://github.com/jedi4ever/veewee) repository, also the baseboxes encapsulated by these veewee definitions will be publicly available via [Vagrantbox.es](http://vagrantbox.es/).
 
 
 Downloads
@@ -34,7 +34,7 @@ This repository includes veewee definitions below
     - 279.7 MB
     - packaged with 'unicode noman noinfo nodoc noX' setting
     - VirtualBox Guest Additions 4.3
- * [gentoo-latest-i686-minimal](https://dl.dropboxusercontent.com/s/0e23qmbo97wb5x2/gentoo-20131029-i686-minimal.box) : Gentoo 2013.10.29 amd64 minimal on 2013.10.30
+ * [gentoo-latest-i686-minimal](https://dl.dropboxusercontent.com/s/0e23qmbo97wb5x2/gentoo-20131029-i686-minimal.box) : Gentoo 2013.10.29 i686 minimal on 2013.10.30
     - 266.2 MB
     - packaged with 'unicode noman noinfo nodoc noX' setting
     - VirtualBox Guest Additions 4.3
@@ -64,22 +64,22 @@ Default is "en_US.UTF-8". Let's say your preferred language a French. Then do th
 
 ###  Hey ma, my portage is empty!
 
-When your system is booted for the first time. Hit like
+When your system is booted for the first time. Hit
 
 > emerge --sync           ( or emerge-webrsync)
 
-to make sure the portage tree in your system is populated.
+to make sure a portage tree in your system is populated.
 
 
 ### Check USE flags
 
 USE flags have been customized for each basebox.
-Hit this commands to see what you already have in your box.
+Hit these commands to see what you already have in your box.
 
 > cat /etc/portage/package.use/*  
 > cat /etc/portage/make.conf | grep USE
 
-If you change the portage setting, Run
+If you change portage settings, run
 
 > emerge -NuDav [package or 'world']
 
