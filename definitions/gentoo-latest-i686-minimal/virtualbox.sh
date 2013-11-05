@@ -9,8 +9,8 @@ DATAEOF
 
 # unmask
 cat <<DATAEOF >> "$chroot/etc/portage/package.unmask/virtualbox-guest-additions"
->=app-emulation/virtualbox-guest-additions-4.3.0
->=x11-drivers/xf86-video-virtualbox-4.3.0
+>=app-emulation/virtualbox-guest-additions-4.3.2
+>=x11-drivers/xf86-video-virtualbox-4.3.2
 DATAEOF
 
 # install the virtualbox guest additions, add vagrant and root to group vboxguest

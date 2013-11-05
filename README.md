@@ -28,7 +28,7 @@ This repository includes veewee definitions below
     - VirtualBox Guest Additions 4.3
     - chef-10.24.0, and puppet-3.3.1
 
-### Minimal Flavor: no source, no doc, no man, nor no info
+### Minimal Flavor: no source, no doc, no man, or no info
 
  * [gentoo-latest-amd64-minimal](https://dl.dropboxusercontent.com/s/mfurnvstqoj8w47/gentoo-20131024-amd64-minimal.box) : Gentoo 2013.10.24 amd64 minimal on 2013.10.30
     - 279.7 MB
