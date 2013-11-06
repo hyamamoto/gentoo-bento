@@ -2,11 +2,11 @@
 source /etc/profile
 
 cat <<DATAEOF >> "$chroot/etc/portage/package.accept_keywords/xorg-server"
-=x11-drivers/xf86-video-virtualbox-4.3.0 ~x86 ~amd64
+=x11-drivers/xf86-video-virtualbox-4.3.2 ~x86 ~amd64
 DATAEOF
 
 cat <<DATAEOF >> "$chroot/etc/portage/package.unmask/xorg-server"
->=x11-drivers/xf86-video-virtualbox-4.3.0
+>=x11-drivers/xf86-video-virtualbox-4.3.2
 DATAEOF
 
 # use flags for gtk dependency
