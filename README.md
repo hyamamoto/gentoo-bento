@@ -39,13 +39,13 @@ This repository includes veewee definitions below
     - packaged with 'unicode noman noinfo nodoc noX' setting
     - VirtualBox Guest Additions 4.3
 
-<!---
 
-kernel is based on gentoo-sources-3.10.7-r1  
-gentoo-xxx-amd64 definitions are tested against 20131024 snapshot.  
-gentoo-xxx-i686 definitions are tested against 20131029 snapshot.  
+### Note
 
--->
+* 2 cpu, 1024MB memory
+* kernel is based on gentoo-sources-3.10.7-r1  
+* gentoo-xxx-amd64 definitions are tested against 20131024 snapshot.  
+* gentoo-xxx-i686 definitions are tested against 20131029 snapshot.  
 
 
 Things to do on your first boot
@@ -94,8 +94,7 @@ Put your customized ebuilds there and emerge. You can choose [Layman](http://wik
 
 Future plans
 ------------
-
-* Smaller box (squash it)
+* Smaller box (squash? frugel?)
 * Minimal X setup
 * Fully configured but lightweight X setup
 * Convert these definition to Packer templates
